@@ -1,0 +1,63 @@
+<!--pages/applyPage/applyPage.wxml-->
+<!-- <text>pages/applyPage/applyPage.wxml</text> -->
+<import src="../../component/navView/navView.wxml"/>
+<view class='bgView' style='background: url(http://videoss.cdn.bcebos.com/bg.png) repeat-y;background-size: 100vw 178vw;'>
+  <template is="navView" data="{{haveBackBtn,isIphoneX}}"/>
+  <view class='content'>
+    <view class='user'>
+      <image src='{{user.avatar}}'></image>
+      <text>{{user.name}}</text>
+    </view>
+    <view class='identity'>
+      <view>请先选择您的身份</view>
+      <view class='segement'>
+        <view class='segement-view' bindtap='changeIdentity' style="background: url({{identity===1?'http://videoss.cdn.bcebos.com/identity-select.png':''}}) no-repeat center;background-size: 100% 100%;color: {{identity===1?'white':'#ed8c88'}}">中北控股</view>
+        <view class='segement-view' bindtap='changeIdentity' style="background: url({{identity===2?'http://videoss.cdn.bcebos.com/identity-select.png':''}}) no-repeat center;background-size: 100% 100%;color: {{identity===2?'white':'#ed8c88'}}">嘉宾</view>
+      </view>
+    </view>
+    <form report-submit='true' bindsubmit='apply'>
+      <view class='fillout'>
+        <view class='fill-bg'>
+          <input name='name' value='{{enroll.name}}' type='text' confirm-type='next' placeholder='姓名' placeholder-class='placeholader'></input>
+        </view>
+        <view class='fill-bg'>
+          <input name='phone' value='{{enroll.phone}}' type='number' placeholder='手机号' placeholder-class='placeholader'></input>
+        </view>
+        <view wx:if='{{identity===1}}' class='fill-bg pick'>
+          <picker name='companyIndex' range='{{companies}}' bindchange='chooseCompany' value='{{companyIndex}}'>
+            {{companys[companyIndex].name}}
+          </picker>
+          <image src='../../assets/arrow-down.png'></image>
+        </view>
+        <view wx:if='{{identity===2}}' class='fill-bg'>
+          <input name='company' value='{{enroll.company}}' type='text' confirm-type='next' placeholder='公司' placeholder-class='placeholader'></input>
+        </view>
+        <view class='fill-bg'>
+          <input name='job' value='{{enroll.job}}' type='text' confirm-type='next' placeholder='职位' placeholder-class='placeholader'></input>
+        </view>
+        <view wx:if='{{identity===1&&showEmail===true}}' class='fill-bg email'>
+          <input name='email' value='{{enroll.email}}' type='text' confirm-type='next' placeholder='集团邮箱' placeholder-class='placeholader'></input>
+          <text>@ccnc.cc</text>
+        </view>
+        <view class='stay' bindtap='chooseStay'>
+          <image src="{{stay===0?'../../assets/stay.png':'../../assets/stay-select.png'}}"></image>
+          <text>需要住宿</text>
+        </view>
+        <view wx:if='{{stay===1}}' class='fill-bg'>
+          <input name='no' value='{{enroll.no}}' type='idcard' placeholder='身份证号' placeholder-class='placeholader'></input>
+        </view>
+      </view>
+      <view class='selection'>
+        <view>选择您参加的环节</view>
+        <view class='tag'>
+          <view class='tag-view' bindtap='chooseMeeting' style="width: 170rpx;background: url({{meeting===1?'http://videoss.cdn.bcebos.com/art-select.png':''}}) no-repeat center;background-size: 100% 100%;color: {{meeting===1?'white':'#ed8c88'}};border: {{meeting===1?'white':'#ed8c88'}} solid 2rpx;border-radius: 32rpx;">高峰论坛</view>
+          <view class='tag-view' bindtap='chooseArt' style="width: 170rpx;background: url({{art===1?'http://videoss.cdn.bcebos.com/art-select.png':''}}) no-repeat center;background-size: 100% 100%;color: {{art===1?'white':'#ed8c88'}};border: {{art===1?'white':'#ed8c88'}} solid 2rpx;border-radius: 32rpx;">文艺汇演</view>
+          <view class='tag-view' bindtap='chooseEat' style="width: 110rpx;background: url({{eat===1?'http://videoss.cdn.bcebos.com/eat-select.png':''}}) no-repeat center;background-size: 100% 100%;color: {{eat===1?'white':'#ed8c88'}};border: {{eat===1?'white':'#ed8c88'}} solid 2rpx;border-radius: 32rpx;">晚宴</view>
+        </view>
+      </view>
+      <view class='btn-area'>
+        <button style='background: url(http://videoss.cdn.bcebos.com/submit.png) no-repeat center;background-size: 100% 100%;' class='btn' form-type='submit'>提交</button>
+      </view>
+    </form>
+  </view>
+</view>

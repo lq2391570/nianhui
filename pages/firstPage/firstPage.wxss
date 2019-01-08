@@ -1,0 +1,213 @@
+/* pages/firstPage/firstPage.wxss */
+@keyframes scaleDraw {
+  0%{
+      transform: scale(1);
+  }
+  25%{
+      transform: scale(1.1);
+  }
+  50%{
+      transform: scale(1);
+  }
+  75%{
+      transform: scale(1.1);
+  }
+}
+page{
+  height: 100%;
+}
+.bgView{
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-size: 100% 100%;
+}
+.contentView{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+  width: 100%;
+  
+}
+.topContentView{
+  height: 80%;
+  width: 100%;
+  background-size: 100% 100%;
+  margin-top: 20rpx;
+}
+.bottomContentView{
+  width: 100%;
+  font-size: 25rpx;
+  color: white;
+  text-align: center;
+  padding-bottom: 50rpx;
+}
+.topTextView{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 50%;
+}
+.topTextView text:nth-child(1){
+  padding-top: 110rpx;
+  font-size: 40rpx;
+  text-align: center;
+  color: rgb(225, 78, 65);
+  font-weight: bold;
+}
+.topTextView text:nth-child(2){
+  font-size: 60rpx;
+  text-align: center;
+  color: rgb(213, 213, 213);
+  font-weight: bold;
+  padding-bottom: 70rpx;
+}
+.topTextView image{
+  padding-bottom: 80rpx;
+  width: 150rpx;
+  height: 20rpx;
+}
+.applyBtnView{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.applyBtn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 340rpx;
+  width: 340rpx;
+  background-size: 100% 100%;
+  animation: scaleDraw 8s ease-in-out infinite;
+}
+.applyBtn text:nth-child(1){
+  font-size: 40rpx;
+  color: white;
+  padding-bottom: 10rpx;
+}
+.applyBtn text:nth-child(2){
+  font-size: 25rpx;
+  color: white;
+  padding-bottom: 50rpx;
+}
+.applyNotice{
+  font-size: 25rpx;
+  color: rgb(163, 163, 163);
+  padding-top: 30rpx;
+  padding-bottom: 20rpx;
+}
+.popView{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.popView view:nth-child(1){
+  font-size: 40rpx;
+  font-weight: bold;
+  color: rgb(224, 68, 61);
+  border-bottom: 1rpx dashed rgb(224, 68, 61);
+  margin: 0rpx 40rpx 40rpx 40rpx;
+  width: 100%;
+  height: 80rpx;
+  text-align: center;
+}
+.popView view:nth-child(2){
+  text-align: left;
+  color: gray;
+  
+}
+.alreadyBtn{
+  color: white;
+  text-align: center;
+  font-size: 35rpx;
+  height: 110rpx;
+  width: 300rpx;
+  /* background: rgb(217, 54, 45); */
+  line-height: 100rpx;
+  margin-top: 40rpx;
+  margin-bottom: 20rpx;
+  background-size: 100% 100%;
+  
+}
+.comeBackpopView{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 800rpx;
+  background-size: 100% 100%;
+}
+.comeBackpopView-top{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  height: 70%;
+  
+}
+
+.comeBackpopView-top-text1{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 30%;
+}
+.comeBackpopView-top-text1 text:nth-child(1){
+  font-size: 55rpx;
+  font-weight: bold;
+  color: rgb(228, 93, 71);
+}
+.comeBackpopView-top-text1 text:nth-child(2){
+  font-size: 35rpx;
+  color: #666666;
+}
+.comeBackpopView-top-text2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 40%;
+  margin-bottom: 40rpx;
+  
+}
+.comeBackpopView-top-text2 text{
+  color: #333333;
+}
+.callClass{
+  color: rgb(228, 93, 71);
+}
+.nameClassView{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+.nameClassView text:nth-child(1){
+ font-size: 30rpx;
+  color: #666666;
+  font-weight: normal;
+}
+
+.nameClass2{
+  /* border-radius: 20rpx; */
+  /* background: #dddddd; */
+  color: #666666;
+  /* background: rgb(251, 220, 202); */
+}
+

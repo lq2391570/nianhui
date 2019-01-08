@@ -1,0 +1,25 @@
+<!--pages/canNotSignPage/canNotSignPage.wxml-->
+<!-- <text>pages/canNotSignPage/canNotSignPage.wxml</text> -->
+<import src="../../component/navView/navView.wxml"/>
+<view class='bgView' style="background-image: url('http://videoss.cdn.bcebos.com/bg.png')">
+<template is="navView" data="{{haveBackBtn,isIphoneX}}"/>
+<view class='contentView' style="background-image: url('http://videoss.cdn.bcebos.com/applySucceedBg.png')">
+<view class='contentView-top'>
+<image src='http://videoss.cdn.bcebos.com/applySucceedLogo.png'></image>
+<text>您已取消报名</text>
+</view>
+<view class='contentView-bottom'>
+<view class='contentView-bottom-body'>
+<text>感谢您对中北年会的支持</text>
+<text>期待您的下次参与</text>
+</view>
+<view class='bottomhintView'>
+    <text  decode="{{true}}">综合管理部</text>
+    <text bindtap='phoneCall'>电话：{{phoneNum}}</text>
+   </view>
+</view>
+</view>
+<view class='bottomContentView'>
+ 中国 西安
+ </view>
+ </view>

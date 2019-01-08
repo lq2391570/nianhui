@@ -1,0 +1,24 @@
+<!--pages/succeedSignIn/succeedSignIn.wxml-->
+<!-- <text>pages/succeedSignIn/succeedSignIn.wxml</text> -->
+<import src="../../component/navView/navView.wxml"/>
+<view class='bgView' style="background-image: url('http://videoss.cdn.bcebos.com/bg.png')">
+<template is="navView" data="{{haveBackBtn,isIphoneX}}"/>
+<view class='contentView' style="background-image: url('http://videoss.cdn.bcebos.com/tableNumBG.png')">
+<text style='margin-top:70rpx;font-size: 40rpx;color: rgb(225, 78, 65);'>您的桌位号：{{numOfDesk}}</text>
+<view class='signInPeoplesView'>
+ <text>您同桌的嘉宾有</text>
+ <text>{{singInPeoples}}</text>
+ </view>
+ <view class='signInScceedTitle' style="background-image: url('http://videoss.cdn.bcebos.com/personalbj.png')">
+ <text class='signInScceedTitleText1'>舞台</text>
+ <!-- <text class='signInScceedTitleText2'>【签到成功】</text> -->
+ <text class='signInScceedTitleText1'>所在位置</text>
+ </view>
+ <view class='seatsView'>
+   <view wx:for="{{numberOfSeatArray}}" class='seats' style="background-image: url('{{numberOfSeatArray[index] == numOfDesk ? selectDeskImage:defaultDeskImage}}');background-size: 100% 100%;">
+  <text>{{numberOfSeatArray[index]}}</text>
+</view>
+ </view>
+ <!-- <text style='margin-top:30rpx;font-size: 40rpx;'>座位号：{{numOfDesk}}</text> -->
+</view>
+</view>

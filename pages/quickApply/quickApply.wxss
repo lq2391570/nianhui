@@ -1,0 +1,95 @@
+/* pages/quickApply/quickApply.wxss */
+page{
+  height: 100%;
+}
+.bgView{
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-size: 100% 100%;
+}
+.contentView{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+  width: 100%;
+  background-size: 100% 100%;
+  align-items: center;
+  /* background: white; */
+}
+.contentView-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 90%;
+  width: 85%;
+  background: white;
+  border-radius: 20rpx;
+  align-items: center;
+}
+.userMesView{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 180rpx;
+  width: 80%;
+  /* background: blanchedalmond; */
+  align-items: center;
+  border-bottom: 1rpx dashed #D2ABA7;
+}
+.headImageClass{
+  left: 50rpx;
+  top: 10rpx;
+  height: 80rpx;
+  width: 80rpx;
+}
+.userNameClass{
+  font-size: 32rpx;
+  padding-left: 30rpx;
+  color: gray;
+}
+.inputListView{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 240rpx;
+  width: 80%;
+  margin-top: 30rpx;
+  /* background: bisque; */
+}
+.inputView{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80rpx;
+  border-radius: 40rpx;
+  background-color: #fcf3ed;
+  margin-top: 30rpx;
+  box-shadow: 5rpx 5rpx 5rpx #f9e3d7 inset;
+}
+.inputView input{
+  padding-left: 40rpx;
+  font-size: 35rpx;
+}
+.submitBtnclass{
+  width: 584rpx;
+  height: 114rpx;
+  line-height: 104rpx;
+  color: white;
+  text-align: center;
+  margin-bottom: 100rpx;
+  font-size: 35rpx;
+  margin-top: 70rpx;
+  background-color: white;
+}
+.submitBtnclass::after{
+  border: 0;
+}
+

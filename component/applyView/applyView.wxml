@@ -1,0 +1,22 @@
+<!--component/applyView/applyView.wxml-->
+<!-- <text>component/applyView/applyView.wxml</text> -->
+<template name="applyView">
+ <wux-popup closable visible="{{ isOpenPopup }}" bind:close="closePopup" bind:closed="onClosed1" isHiddenExitBtn="{{true}}">
+    <view class='popView'>
+    <view>【报名须知】</view>
+    <view style='max-height: 600rpx; overflow: scroll;'>
+    <text>2019中北年会即将盛大开启，请务必在报名参会前仔细阅读以下几点： 
+
+1.	2019年中北年会面向中北控股集团所有人员（包括总部、分子公司员工）及特邀嘉宾。集团参会人员及嘉宾以不同报名入口进行报名。
+2.	报名流程分“初次报名”、“二次确认”、“现场签到”三个步骤，望参会人员在初次报名后，留意后续报名流程，及时进行二次确认及现场签到。
+3.	报名中填写的所有参会人员信息仅作为本次年会参会身份凭证、现场抽奖互动游戏之用，不用于其他商业用途，请如实填写个人信息。
+4.	报名参会人员如需住宿，请勾选“需要住宿”选项并如实填写身份证号码等其他个人信息，便于进行酒店房间预定。
+5.	集团总部报名参会人员请务必填写中北控股集团企业邮箱，以用于身份核实，还未开通企业邮箱的人员请尽快联系集团总部信息中心。
+6.	如有其他报名疑问，请致电中北控股集团综合管理部:029-88746889。 \n
+</text>
+<text class="callClass" bindtap='callMe'>点击拨打电话</text>
+    </view>
+    <view class='alreadyBtn' bindtap='closePopup' style="background-image: url('http://videoss.cdn.bcebos.com/btn1.png')">我已阅读</view>
+    </view>
+</wux-popup>
+</template>

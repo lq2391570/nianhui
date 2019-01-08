@@ -1,0 +1,27 @@
+<import src="../../component/navView/navView.wxml" />
+<wux-toast id="wux-toast" />
+<view class='bgView' style="background-image: url('http://videoss.cdn.bcebos.com/bg.png')">
+  <template is="navView" data="{{haveBackBtn,isIphoneX,navTitle}}" />
+  <view class='contentView' style="background-image: url('http://videoss.cdn.bcebos.com/tableNumBG.png')">
+    <text class='titleText'>请选出你最喜欢的3个节目</text>
+    <view class='selectedBGView' style="background-image: url('http://videoss.cdn.bcebos.com/votebj.png');background-size: 100% 100%;">
+    <view class='selectedViewSubtitleView'>
+    <text>节目总数：{{programs.length}}</text>
+    </view>
+      <scroll-view class='selectedView'>
+        <view class='selectedView-list' wx:for="{{programs}}" bindtap='selectProgramClick' data-index='{{index}}'>
+        <view class='selectedView-list-left' wx:if="{{selectStates[index] == true}}">
+          <image src='../../assets/stay-select.png'></image>
+        </view>
+        <view class='selectedView-list-left' wx:else>
+          <image src='../../assets/stay.png'></image>
+        </view>
+        <view class='selectedView-list-right'>
+          <text>{{programs[index].name}}</text>
+        </view>  
+        </view>
+      </scroll-view>
+    </view>
+    <view class='submitBtn' style="background-image: url('http://videoss.cdn.bcebos.com/submit.png');background-size: 100% 100%;" bindtap='submitBtnClick'>提交</view>
+  </view>
+</view>

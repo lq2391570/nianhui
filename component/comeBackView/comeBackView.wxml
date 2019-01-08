@@ -1,0 +1,24 @@
+<!--component/comeBackView/comeBackView.wxml-->
+<!-- <text>component/comeBackView/comeBackView.wxml</text> -->
+<template name="comeBackView">
+<wux-popup closable visible="{{ isOpenComeBackPopup }}" bind:close="closeComeBackPopup" bind:closed="onClosed1" isHiddenExitBtn="{{false}}" haveBackgoundImg="{{true}}">
+    <view class='comeBackpopView'>
+    <view class='comeBackpopView-top'>
+     <view class='comeBackpopView-top-text1'>
+    <text>欢迎回来</text>
+    <view class='nameClassView'>
+    <text>亲爱的：</text>
+    <view class='nameClass2'>{{userMes.name}}</view>
+    </view>
+    </view>
+    <view class='comeBackpopView-top-text2'>
+    <text>2019年中北年会</text>
+    <text>即将如约而至</text>
+    <text>期待与您</text>
+    <text>共襄盛举</text>
+    </view>
+    </view>
+    <view class='alreadyBtn' bindtap='goOnAttend' style="background-image: url('http://videoss.cdn.bcebos.com/btn1.png')">继续参会</view>
+    </view>
+</wux-popup>
+</template>

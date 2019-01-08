@@ -1,0 +1,77 @@
+/* pages/signCodePage/signCodePage.wxss */
+page{
+  height: 100%;
+}
+.bgView{
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-size: 100% 100%;
+}
+.contentView{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 85%;
+  width: 100%;
+  background-size: 100% 100%;
+}
+.bottomContentView{
+  width: 100%;
+  font-size: 25rpx;
+  color: white;
+  text-align: center;
+  padding-bottom: 50rpx;
+}
+.contentView_top{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50%;
+  width: 100%;
+  align-items: center;
+  margin-top: 65rpx;
+}
+.contentView_top text:nth-child(1){
+  font-size: 38rpx;
+  font-weight: bold;
+  color: rgb(225, 78, 65);
+}
+.twoDimensionCode image{
+width: 400rpx;
+height: 400rpx;
+}
+.signTextView{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.signTextView text:nth-child(1){
+  font-size: 28rpx;
+  color: #999999;
+  font-weight: bold;
+}
+.signTextView text:nth-child(2){
+   font-size: 28rpx;
+   color: #999999;
+   font-weight: bold;
+}
+.contentView_bottom{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 35%;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+.contentView_bottom image{
+   width: 150rpx;
+  height: 20rpx;
+}

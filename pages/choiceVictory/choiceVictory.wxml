@@ -1,0 +1,21 @@
+<!--pages/choiceVictory/choiceVictory.wxml-->
+<view class='content'>
+  <view class='top'>
+    <view class='nose'>
+      <view class='nose-item'></view>
+      <view class='nose-item'></view>
+    </view>
+    <image src='../../assets/success.png'></image>
+  </view>
+  <view class='mid' >
+    <view wx:for='{{colors}}' wx:key='colors' wx:for-item='item'>
+      <view class='mid-item' style='background-color: {{item}}'></view>
+    </view>
+  </view>
+  <view class='btm'>
+    <image src='../../assets/title.png'></image>
+  </view>
+  <view class='back' bindtap='backNav'>
+    <image src='../../assets/arrowLeft.png'></image>
+  </view>
+</view>

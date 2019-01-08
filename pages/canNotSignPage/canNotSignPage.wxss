@@ -1,0 +1,104 @@
+/* pages/canNotSignPage/canNotSignPage.wxss */
+page{
+  height: 100%;
+}
+.bgView{
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-size: 100% 100%;
+}
+.contentView{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 85%;
+  width: 100%;
+  background-size: 100% 100%;
+}
+.contentView-top{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 30%;
+  margin-top: 80rpx;
+  /* background: bisque; */
+}
+.contentView-top text{
+  color: rgb(225, 78, 65);
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.contentView-top image{
+  height: 210rpx;
+  width: 220rpx;
+}
+.contentView-bottom{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 60%;
+  /* background: blanchedalmond; */
+}
+.contentView-bottom-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 200rpx;
+  margin-top: 100rpx;
+}
+.contentView-bottom-body text:nth-child(1){
+  color: rgb(225, 78, 65);
+  font-size: 40rpx;
+  border-bottom: 1rpx solid rgb(225, 78, 65);
+  padding-bottom: 25rpx;
+  font-weight: bold;
+}
+.contentView-bottom-body text:nth-child(2){
+  color: #999999;
+  font-size: 33rpx;
+  font-weight: bold;
+}
+.bottomhintView{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0rpx 30rpx;
+  background: rgb(252, 246, 242);
+  border-radius: 25rpx;
+  height: 50rpx;
+  width: 70%;
+  margin-bottom: 70rpx;
+}
+.bottomhintView text:nth-child(1){
+  font-size: 25rpx;
+  color: rgb(200, 174, 157);
+  line-height: 50rpx;
+  text-align: center;
+  margin-right: 25rpx;
+}
+.bottomhintView text:nth-child(2){
+  font-size: 25rpx;
+  color: rgb(200, 174, 157);
+  line-height: 20rpx;
+  text-align: center;
+  border-bottom: 0.5rpx solid rgb(200, 174, 157);
+  padding-top: 5rpx;
+  margin-left: 25rpx;
+}
+.bottomContentView{
+  width: 100%;
+  font-size: 25rpx;
+  color: white;
+  text-align: center;
+  padding-bottom: 50rpx;
+}

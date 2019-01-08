@@ -1,0 +1,26 @@
+<!--pages/aEndSignPage/aEndSignPage.wxml-->
+<!-- <text>pages/aEndSignPage/aEndSignPage.wxml</text> -->
+<import src="../../component/navView/navView.wxml"/>
+<wux-backdrop id="wux-backdrop" />
+<wux-toast id="wux-toast" />
+<view class='bgView' style="background-image: url('http://videoss.cdn.bcebos.com/bg.png');">
+<template is="navView" data="{{haveBackBtn,isIphoneX}}"/>
+ <view class='contentView'>
+  <view class='contentView-top' style="background-image: url('http://videoss.cdn.bcebos.com/endSignBG.png');background-size: 100% 100%;">
+  <view class='topTitleView'>
+  <text>欢迎来到中北年会</text>
+  <text>共襄盛举</text>
+  </view>
+  <view class='centerBtnView' style="background-image: url('http://videoss.cdn.bcebos.com/applyBtn.png');background-size: 100% 100%;" bindtap='signBtnClick'>
+  <text>现场签到</text>
+  </view>
+  <view class='pool' hidden='{{false}}'>
+        <view class='pool-num'>能量池{{pool}}g</view>
+        <view class='inject' bindtap='inject'>注入</view>
+      </view>
+  </view>
+ <view class='bottomContentView'>
+ 中国 西安
+ </view>
+ </view>
+ </view>

@@ -1,0 +1,69 @@
+/* pages/voteOfProgramResult/voteOfProgramResult.wxss */
+page{
+  height: 100%;
+}
+.bgView{
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-size: 100% 100%;
+}
+.contentView{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+  width: 100%;
+  background-size: 100% 100%;
+  align-items: center;
+}
+.successLogoView{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 40%;
+  width: 70%;
+  /* background: cornflowerblue; */
+  margin-top: 20rpx;
+  border-bottom: 1rpx dashed rgb(225, 78, 65);
+}
+.successLogoView image{
+   height: 210rpx;
+   width: 220rpx;
+   margin-top: 100rpx;
+}
+.successLogoView text{
+  font-size: 45rpx;
+  color: rgb(225, 78, 65);
+  font-weight: bold;
+  margin-bottom: 50rpx;
+}
+.resultView{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 30%;
+  width: 60%;
+  /* background: cadetblue; */
+  overflow-y: scroll;
+}
+.resultView text{
+  font-size: 30rpx;
+}
+.comeBackBtnView{
+  width: 584rpx;
+  height: 124rpx;
+  line-height: 114rpx;
+  color: white;
+  text-align: center;
+  margin-bottom: 100rpx;
+  font-size: 35rpx;
+}
+

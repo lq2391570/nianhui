@@ -1,0 +1,63 @@
+/* pages/startPage/startPage.wxss */
+page{
+  height: 100%;
+}
+.bgView{
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-size: 100% 100%;
+}
+.contentView{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%;
+  align-items: center;
+  /* background: white; */
+}
+.logoClass{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300rpx;
+  width: 100%;
+  /* background: cadetblue; */
+  margin-top: 100rpx;
+}
+.logoClass image{
+  width: 555rpx;
+  height: 136.5rpx;
+}
+.enterView{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: cadetblue;
+  margin-bottom: 50rpx;
+  height: 300rpx;
+  width: 100%;
+}
+.submitBtnclass{
+  width: 584rpx;
+  height: 114rpx;
+  line-height: 104rpx;
+  color: white;
+  text-align: center;
+  margin-bottom: 100rpx;
+  font-size: 35rpx;
+  margin-top: 70rpx;
+  background-color: rgba(255,255,255,0);
+}
+.submitBtnclass::after{
+  border: 0;
+}

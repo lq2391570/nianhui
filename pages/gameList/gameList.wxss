@@ -1,0 +1,61 @@
+/* pages/gameList/gameList.wxss */
+page{
+  height: 100%;
+}
+.content{
+  height: 100%;
+}
+.back{
+  position: absolute;
+  top: 5vh;
+  left: 20rpx;
+  width: 70rpx;
+  height: 70rpx;
+}
+.back image{
+  width: 70rpx;
+  height: 70rpx;
+}
+.top{
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+.bottom{
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.submitBtn{
+  width: 340rpx;
+  height: 108rpx;
+  line-height: 108rpx;
+  color: white;
+  text-align: center;
+  margin-top: 470rpx;
+  font-size: 35rpx;
+  background-color: rgba(255,255,255,0);
+  border: 2rpx solid white;
+  border-radius: 54rpx;
+  font-weight: bold;
+}
+.submitBtnclass2{
+  width: 340rpx;
+  height: 108rpx;
+  line-height: 108rpx;
+  color: rgb(225, 78, 65);
+  text-align: center;
+  margin-bottom: 70rpx;
+  font-size: 35rpx;
+  background-color: rgba(255,255,255,0);
+  border: 2rpx solid rgb(225, 78, 65);
+  border-radius: 54rpx;
+  font-weight: bold;
+}
+
+

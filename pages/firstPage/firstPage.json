@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "wux-cell": "../../miniprogram_npm/wux-weapp/cell/index",
+    "wux-button": "../../miniprogram_npm/wux-weapp/button/index",
+    "wux-popup": "../../miniprogram_npm/wux-weapp/popup/index"
+  }
+}

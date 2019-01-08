@@ -1,0 +1,19 @@
+<!--pages/choiceGame/choiceGame.wxml-->
+<view class='content'>
+  <view class='left' style='width: {{leftWidth}}; background-color: {{list[currentWave-1].leftColor}};z-index: {{leftLevel}}' bindtap='leftChoose'>
+    <view class='keyword'>{{list[currentWave-1].leftKey}}</view>
+  </view>
+  <view class='right' style='width: {{rightWidth}}; background-color: {{list[currentWave-1].rightColor}};z-index: {{rightLevel}}' bindtap='rightChoose'>
+    <view class='keyword'>{{list[currentWave-1].rightKey}}</view>
+  </view>
+  <view wx:if='{{submit}}' bindtap='backHome' class='back-home'>返回首页，稍后查看结果</view>
+  <view class='back' bindtap='backNav'>
+    <image src='../../assets/zuojiantou.png'></image>
+  </view>
+  <view class='wave'>第{{list[currentWave-1].wave}}轮</view>
+  <view class='people'>{{people}}</view>
+  <view wx:if='{{submitPre}}' class='mask'>
+    <view class='cancel' bindtap='cancel'>取消</view>
+    <view class='determine' bindtap='determine'>确定</view>
+  </view>
+</view>

@@ -1,0 +1,17 @@
+<!--pages/choiceResult/choiceResult.wxml-->
+<view class='content' style='background-color: {{color}}'>
+  <view class='result'>
+    <view class='top'>
+      <view class='top-title' style='color: {{color}}'>{{topTitle}}</view>
+      <view class='top-des'>{{topDes}}</view>
+    </view>
+    <view class='btm'>
+      <view class='btm-title'>{{btmTitle}}</view>
+      <view class='btm-des'>稍后您将参与分享第{{wave}}轮的奖金</view>
+    </view>
+  </view>
+  <view class='back' bindtap='backNav'>
+    <image src='../../assets/zuojiantou.png'></image>
+  </view>
+  <view class='wave'>第{{wave}}轮</view>
+</view>

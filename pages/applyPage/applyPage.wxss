@@ -1,0 +1,135 @@
+/* pages/applyPage/applyPage.wxss */
+page{
+  height: 100%;
+}
+.bgView{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  border-radius: 15rpx;
+  font-size: 32rpx;
+  color: #999;
+  width: 90vw;
+  margin-bottom: 10vh;
+}
+.user{
+  display: flex;
+  align-items: center;
+  margin: 30rpx 50rpx;
+  border-bottom: #E66647 dashed 2rpx;
+  height: 120rpx;
+}
+.user image{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+}
+.user text{
+  margin-left: 20rpx;
+}
+.identity{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10rpx 50rpx;
+}
+.identity .segement{
+  width: 100%;
+  height: 80rpx;
+  border: #ed8c88 solid 2rpx;
+  border-radius: 40rpx;
+  margin: 20rpx 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.identity .segement .segement-view{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fillout{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  color: #666;
+}
+.fillout .fill-bg{
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+  border-radius: 40rpx;
+  background-color: #fcf3ed;
+  margin: 10rpx 50rpx;
+  box-shadow: 5rpx 5rpx 5rpx #f9e3d7 inset;
+}
+.fillout .fill-bg input{
+  margin: 0 30rpx;
+}
+.fillout .fill-bg picker{
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 30rpx;
+  width: 100%;
+}
+.fillout .pick image{
+  width: 30rpx;
+  height: 22rpx;
+  margin-right: 30rpx;
+}
+.fillout .email text{
+  margin-right: 30rpx;
+}
+.fillout .stay{
+  display: flex;
+  align-items: center;
+  margin: 20rpx 50rpx;
+}
+.fillout .stay image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.fillout .stay text{
+  margin-left: 20rpx;
+}
+.selection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40rpx 50rpx;
+}
+.selection .tag{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20rpx 0;
+}
+.selection .tag .tag-view{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64rpx;
+}
+.btn{
+  margin: 30rpx 50rpx 80rpx 50rpx;
+  height: 100rpx;
+  color: white;
+}
+.btn::after{
+  border: 0;
+}
+.placeholader{
+  color: #999;
+}

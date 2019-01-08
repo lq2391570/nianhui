@@ -1,0 +1,29 @@
+<!--pages/myLottery/myLottery.wxml-->
+<!-- <text>pages/myLottery/myLottery.wxml</text> -->
+<import src="../../component/navView/navView.wxml" />
+<view class='bgView' style="background-image: url('http://videoss.cdn.bcebos.com/bg.png')">
+  <template is="navView" data="{{haveBackBtn,isIphoneX,navTitle}}" />
+  <view class='contentView'>
+    <view class='lotteryItem1' style="background-image: url('http://videoss.cdn.bcebos.com/tianjianghongbao.png'); background-size: 100% 100%;">
+    <view class='redBacketScoreView'>
+       <text class='scoreText'>{{awardMes.score}}<text class='scoreText2'>分</text></text>
+       <text class='hintText1'>{{awardMes.redPacket}}</text>
+    </view>
+    </view>
+    <view class='lotteryItem2' style="background-image: url('http://videoss.cdn.bcebos.com/yishaoshengduo.png'); background-size: 100% 100%;">
+    <view class='topTextView'>
+     <view class='topTextViewItem' wx:for="{{titleArray}}">
+      {{titleArray[index]}}
+     </view>
+    </view>
+    <view class='bottomTextView'>
+    <text class='hintText2'>{{awardMes.winner}}</text>
+    </view>
+    </view>
+    <view class='lotteryItem3' style="background-image: url('http://videoss.cdn.bcebos.com/shiwu.png'); background-size: 100% 100%;">
+    <view class='realGiftBottomView'>
+      <text class='hintText3'>{{awardMes.award}}</text>
+    </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,132 @@
+/* pages/myLottery/myLottery.wxss */
+page{
+  height: 100%;
+}
+.bgView{
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-size: 100% 100%;
+}
+.contentView{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+  width: 100%;
+  background-size: 100% 100%;
+  align-items: center;
+}
+.lotteryItem{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 710rpx;
+  height: 390rpx;
+  /* background: cadetblue; */
+}
+.lotteryItem1{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 710rpx;
+  height: 390rpx;
+  /* background: cadetblue; */
+}
+.scoreText{
+  font-size: 65rpx;
+  color: white;
+  font-weight: bold;
+  text-align: right;
+  margin-bottom: 50rpx;
+  margin-right: 70rpx;
+}
+.scoreText2{
+  font-size: 35rpx;
+  color: white;
+  text-align: right;
+}
+.hintText1{
+  margin-bottom: 40rpx;
+  margin-right: 70rpx;
+  font-size: 35rpx;
+  color: lightgray;
+}
+.redBacketScoreView{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 50%;
+  width: 100%;
+}
+.lotteryItem2{
+   display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 710rpx;
+  height: 390rpx;
+}
+.topTextView{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 60%;
+  width: 100%;
+  margin-right: 100rpx;
+  margin-top: 20rpx;
+}
+.topTextViewItem{
+  font-size: 30rpx;
+  color: rgb(225, 78, 65);
+  font-weight: bold;
+}
+.bottomTextView{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: 30%;
+  width: 100%;
+  margin-right: 160rpx;
+}
+.hintText2{
+  /* position: relative;
+  left: 110rpx;
+  top: 100rpx; */
+  font-size: 35rpx;
+  color: #666666;
+}
+.lotteryItem3{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 710rpx;
+  height: 30%;
+   
+}
+.hintText3{
+ 
+  font-size: 35rpx;
+  color: whitesmoke;
+}
+.realGiftBottomView{
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: 30%;
+  width: 100%;
+  margin-right: 160rpx;
+}

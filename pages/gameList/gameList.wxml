@@ -1,0 +1,12 @@
+<!--pages/gameList/gameList.wxml-->
+<view class='content'>
+  <view class='back' bindtap='backNav'>
+    <image src='../../assets/zuojiantou.png'></image>
+  </view>
+  <view class='top' style='background: url(http://videoss.cdn.bcebos.com/game1.png) no-repeat;background-size: 100vw 89vw;'>
+  <view class='submitBtn' bindtap='toRedRain'>进入游戏</view>
+  </view>
+  <view class='bottom' style='background: url(http://videoss.cdn.bcebos.com/game2.png) no-repeat;background-size: 100vw 89vw;'>
+  <view class='submitBtnclass2' bindtap='toChoiceGame'>进入游戏</view>
+  </view>
+</view>

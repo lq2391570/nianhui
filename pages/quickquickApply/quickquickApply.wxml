@@ -1,0 +1,28 @@
+<!--pages/quickquickApply/quickquickApply.wxml-->
+<!-- <text>pages/quickquickApply/quickquickApply.wxml</text> -->
+<import src="../../component/navView/navView.wxml" />
+<view class='bgView' style="background-image: url('http://videoss.cdn.bcebos.com/bg.png')">
+  <template is="navView" data="{{haveBackBtn,isIphoneX,navTitle}}" />
+  <view class='contentView'>
+    <view class='contentView-content'>
+      <view class='userMesView'>
+        <open-data type="userAvatarUrl" class="headImageClass">
+        </open-data>
+        <open-data type="userNickName" class="userNameClass"></open-data>
+      </view>
+      <view class='inputListView'>
+        <!-- <view class='inputView' >
+          <input placeholder='姓名' bindinput="nameInput"></input>
+        </view> -->
+        <view class='inputView'>
+          <input placeholder='手机号' bindinput="phoneNumInput"></input>
+        </view>
+      </view>
+      <!-- <view class='submitBtnclass' style="background-image: url('http://videoss.cdn.bcebos.com/submit.png');background-size: 100% 100%;" bindtap='submitClick'>
+      提交
+      </view> -->
+      <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo" class='submitBtnclass' style="background-image: url('http://videoss.cdn.bcebos.com/submit.png');background-size: 100% 100%;">提交</button>
+
+    </view>
+  </view>
+</view>

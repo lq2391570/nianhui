@@ -1,0 +1,54 @@
+<!--pages/recharge/recharge.wxml-->
+<import src="../../component/navView/navView.wxml"/>
+<view class='bgView' style='background: url(http://videoss.cdn.bcebos.com/bg.png) repeat-y;background-size: 100vw 178vw;'>
+  <template is="navView" data="{{haveBackBtn,isIphoneX,navTitle}}"/>
+  <view class='content'>
+    <view class='pool' style='background: url(http://videoss.cdn.bcebos.com/pool2.png);background-size: 50vw 50vw;'>
+      <text class='numerical'>{{numerical}}g</text>
+      <text>中北能量池</text>
+    </view>
+    <view class='slider'>
+      <view class='slider-value'>{{slider.value}}</view>
+      <slider
+        backgroundColor='#eee'
+        activeColor='#e54d36'
+        block-size='20'
+        block-color='#e74e30'
+        value='{{slider.value}}'
+        step='{{slider.step}}'
+        min='{{slider.min}}' 
+        max='{{slider.max}}'
+        bindchanging='slider'
+        bindchange='slider'>
+      </slider>
+      <view class='slider-default'>
+        <text>{{slider.min}}</text>
+        <text>{{slider.max}}</text>
+      </view>
+    </view>
+    <view bindtap='recharge' class='recharge'>
+      注入
+    </view>
+    <view class='dynamic'>
+      <view class='title'>
+        <text>最新动态</text>
+      </view>
+      <swiper class='list' style='height: {{swiperHeight}}rpx'
+        autoplay='true'
+        interval='2000'
+        vertical='true'
+        circular='true'
+        display-multiple-items='{{multiple}}'
+      >
+        <block wx:for='{{dynamic}}' wx:key='dynamic' wx:for-item='item'>
+          <swiper-item>
+            <view class='item'>
+              <text class='name'>{{item.simpleName}} {{item.name}}</text>
+              <text class='num'>{{item.money}}g</text>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+</view>

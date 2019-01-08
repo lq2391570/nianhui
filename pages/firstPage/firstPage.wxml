@@ -1,0 +1,31 @@
+<!--pages/firstPage/firstPage.wxml-->
+<!-- <text>pages/firstPage/firstPage.wxml</text> -->
+<import src="../../component/navView/navView.wxml"/>
+<import src="../../component/applyView/applyView.wxml"/>
+<import src="../../component/comeBackView/comeBackView.wxml"/>
+<view class='bgView' style="background-image: url('http://videoss.cdn.bcebos.com/bg.png')">
+<template is="navView" data="{{haveBackBtn,isIphoneX}}"/>
+<view class='contentView'>
+ <view class='topContentView' style="background-image: url('http://videoss.cdn.bcebos.com/content.png')">
+  <view class='topTextView'>
+   <text>2019中北年会</text>
+   <text>报名通道正式开启</text>
+   <image src='http://videoss.cdn.bcebos.com/ccnc.png'></image>
+  </view>
+  <view class='applyBtnView'>
+   <view class='applyBtn' style="background-image: url('http://videoss.cdn.bcebos.com/applyBtn.png')" bindtap='goToApply'>
+   <text>火速报名中</text>
+   <text>累计报名人数{{userMes.num}}人</text>
+   </view>
+   <view class='applyNotice' bindtap='openNotice'>
+   点击了解报名须知
+   </view>
+  </view>
+ </view>
+ <view class='bottomContentView'>
+ 中国 西安
+ </view>
+</view>
+</view>
+<template is="applyView" data="{{isOpenPopup}}"/>
+<template is="comeBackView" data="{{isOpenComeBackPopup,userMes}}"/>

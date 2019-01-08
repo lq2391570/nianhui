@@ -1,0 +1,59 @@
+<!--pages/applyFinishPage/applyFinishPage.wxml-->
+<!-- <text>pages/applyFinishPage/applyFinishPage.wxml</text> -->
+<import src="../../component/navView/navView.wxml"/>
+<wux-backdrop id="wux-backdrop" />
+<wux-toast id="wux-toast" />
+<view class='bgView' style="background-image: url('http://videoss.cdn.bcebos.com/bg.png')">
+<template is="navView" data="{{haveBackBtn,isIphoneX}}"/>
+<view class='contentView'>
+ <view class='topContentView' style="background-image: url('http://videoss.cdn.bcebos.com/applySucceedBg.png')">
+  <view class='topContentView-Top'>
+   <image src='http://videoss.cdn.bcebos.com/applySucceedLogo.png'></image>
+   <text>亲爱的：{{userName}}</text>
+   <text>您已报名成功</text>
+  </view>
+  <view class='topContentView-Bottom'>
+   <view wx:if="{{isGroup==false && peoples.length != 0}}" class='personalView' style="background-image: url('http://videoss.cdn.bcebos.com/personalbj.png')">
+    <text>与您同行的人员:</text>
+    <text>{{peoples}}</text>
+   </view>
+   <view wx:else class='noGroupPersonalView'>
+    <text>中北幸甚有你</text>
+    <text>相伴吾身</text>
+   </view>
+   <view class='ensureSignView' wx:if="{{isAlreadySignIn}}">
+    <view class='ensureSignBtn' style="background-image: url('http://videoss.cdn.bcebos.com/submit.png');background-size: 100% 100%;" bindtap='ensureSign'>领取签到码</view>
+    <view class='canNotSign' bindtap='canNotSignClick'>
+    <text>无法出席点这里</text>
+    </view>
+   </view>
+   <view class='hintTextView' wx:else>
+   <text>年会盛大开幕前10天
+         请再次登录确认报名
+         确认参会后获取现场签到二维码
+   </text>
+   </view>
+   <view class='bottomhintView'>
+    <text  decode="{{true}}">综合管理部</text>
+    <text bindtap='phoneCall'>电话：{{phoneNum}}</text>
+   </view>
+  </view>
+ </view>
+</view>
+</view>
+<view class='ensureCanNotSignView && btn-group' hidden='{{!isShowCanNotSignView}}'>
+<view class='ensureCanNotSignView-top'>
+<view class='ensureCanNotSignView-top-subtitle'>
+<text>2019.01.05 大唐西市酒店</text>
+</view>
+<view class='ensureCanNotSignView-top-title'>
+<text>2019中北年会</text>
+</view>
+<view class='ensureCanNotSignView-top-btn' style="background-image: url('http://videoss.cdn.bcebos.com/submit.png');background-size: 100% 100%;" bindtap='ensureCanNotSignClick'>
+确认不能出席
+</view>
+</view>
+<view class='ensureCanNotSignView-closeBtn && btn-group' bindtap='release'>
+<image src='../../assets/guanbi-2.png'></image>
+</view>
+</view>

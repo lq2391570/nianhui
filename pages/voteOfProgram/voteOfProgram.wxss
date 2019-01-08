@@ -1,0 +1,92 @@
+/* pages/voteOfProgram/voteOfProgram.wxss */
+page{
+  height: 100%;
+}
+.bgView{
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-size: 100% 100%;
+}
+.contentView{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+  width: 100%;
+  background-size: 100% 100%;
+  align-items: center;
+}
+.selectedBGView{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 60%;
+  width: 75%;
+}
+.submitBtn{
+   width: 584rpx;
+  height: 124rpx;
+  line-height: 114rpx;
+  color: white;
+  text-align: center;
+  margin-bottom: 60rpx;
+}
+.titleText{
+  color: rgb(225, 78, 65);
+  font-size: 45rpx;
+  font-weight: bold;
+  margin-top: 100rpx;
+}
+
+.selectedViewSubtitleView{
+  font-size: 30rpx;
+  text-align: left;
+  color: #666666;
+  border-bottom: 1rpx dashed #D2ABA7;
+  height: 100rpx;
+  width: 90%;
+  line-height: 120rpx;
+}
+.selectedView{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 80%;
+  width: 100%;
+  overflow-y: scroll;
+  margin:15rpx 0 ;
+}
+.selectedView-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 70rpx;
+  line-height: 40rpx;
+  padding: 10rpx;
+}
+.selectedView-list-left{
+  width: 20%;
+  height: 40rpx;
+  /* background: blueviolet; */
+}
+.selectedView-list-left image{
+  height: 45rpx;
+  width: 45rpx;
+  margin-left: 30rpx;
+  /* margin-top: 2rpx; */
+}
+.selectedView-list-right{
+  width: 80%;
+  padding: 10rpx 10rpx 10rpx 0;
+}
+.selectedView-list-right text{
+  font-size: 30rpx;
+}

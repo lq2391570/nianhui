@@ -1,0 +1,4 @@
+<!--pages/choiceIndex/choiceIndex.wxml-->
+<view class='content'>
+  <cax id='loading'></cax>
+</view>

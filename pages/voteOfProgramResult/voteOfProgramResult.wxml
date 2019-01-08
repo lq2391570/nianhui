@@ -1,0 +1,18 @@
+<!--pages/voteOfProgramResult/voteOfProgramResult.wxml-->
+<!-- <text>pages/voteOfProgramResult/voteOfProgramResult.wxml</text> -->
+<import src="../../component/navView/navView.wxml" />
+<view class='bgView' style="background-image: url('http://videoss.cdn.bcebos.com/bg.png')">
+  <template is="navView" data="{{haveBackBtn,isIphoneX,navTitle}}" />
+  <view class='contentView' style="background-image: url('http://videoss.cdn.bcebos.com/tableNumBG.png')">
+    <view class='successLogoView'>
+      <image src='http://videoss.cdn.bcebos.com/applySucceedLogo.png'></image>
+      <text>感谢您的投票</text>
+    </view>
+    <view class='resultView'>
+      <text wx:for="{{voteResultArray}}">{{voteResultArray[index].name}}</text>
+    </view>
+    <view class='comeBackBtnView' style="background-image: url('http://videoss.cdn.bcebos.com/submit.png');background-size: 100% 100%;" bindtap='comeBackBtnViewClick'>
+      返回首页
+    </view>
+  </view>
+</view>

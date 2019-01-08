@@ -1,0 +1,330 @@
+/* pages/newFirstPage/newFirstPage.wxss */
+@import "../../component/applyView/applyView.wxss";
+@import "../../component/comeBackView/comeBackView.wxss";
+@keyframes tranDraw {
+  0%{
+      transform: translate(0px,0px);
+  }
+  25%{
+      transform: translate(100px,0px);
+  }
+  50%{
+      transform: translate(-100px,0px);
+  }
+  75%{
+      transform: translate(0px,0px);
+  }
+}
+page{
+  height: 100%;
+}
+.bgView{
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-size: 100% 100%;
+}
+.contentView{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+  width: 100%;
+  background-size: 100% 102%;
+  align-items: center;
+}
+.contentView-top{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 23%;
+  width: 85%;
+  align-items: center;
+  padding-top: 20rpx;
+  background: white;
+}
+.contentView-bottom{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 70%;
+  background: white;
+  width: 85%;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+.bottomContentView{
+  width: 100%;
+  font-size: 25rpx;
+  color: white;
+  text-align: center;
+  padding-bottom: 30rpx;
+}
+.dateTitle{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* height: 50rpx; */
+  width: 85%;
+  color: gray;
+  font-size: 30rpx;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+  margin-top: 45rpx;
+}
+.dateTitle2{
+  font-size: 25rpx;
+  color: #999999;
+  font-weight: bold;
+  padding-top: 60rpx;
+}
+.countdown{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 40rpx;
+  width: 60%;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 40rpx;
+
+}
+.speedApply{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 584rpx;
+  height: 124rpx;
+  background-size: 100% 100%;
+  
+}
+.speedApply text:nth-child(1){
+  font-size: 40rpx;
+  color: white;
+}
+.speedApply text:nth-child(2){
+  font-size: 22rpx;
+  color: white;
+  padding-bottom: 15rpx;
+}
+.talkBtn{
+  width: 272rpx;
+  height: 160rpx;
+  background-size: 100% 100%;
+  animation: tranDraw 6s ease-in-out infinite;
+}
+.kindBtnView{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 200rpx;
+  width: 90%;
+}
+.kindBtnItem{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 200rpx;
+}
+.kindBtnItem image{
+  height: 152rpx;
+  width: 152rpx;
+}
+.kindBtnItem text{
+  font-size: 30rpx;
+  color: black;
+}
+.logoImage{
+  width: 160rpx;
+  height: 20rpx;
+  padding-bottom: 70rpx;
+}
+.applyNotice{
+  font-size: 25rpx;
+  color: rgb(163, 163, 163);
+  padding-top: 30rpx;
+  padding-bottom: 20rpx;
+  
+}
+.popTextArea{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin:auto;
+  height: 396rpx;
+  width: 704rpx;
+  background: burlywood;
+  top: 400rpx;
+}
+.btn-group {
+    position: relative;
+    z-index: 1010;
+    margin-bottom: 50px;
+}
+.btn-group-abo{
+  position: absolute;
+    z-index: 1010;
+    margin-bottom: 50px;
+}
+.textAreaClass{
+  /* background: blueviolet; */
+  margin-top: 60rpx;
+  height: 130rpx;
+  width: 500rpx;
+  font-size: 35rpx;
+}
+.submitBtn{
+  width: 584rpx;
+  height: 124rpx;
+  margin-bottom: 40rpx;
+  text-align: center;
+  color: white;
+  line-height: 115rpx;
+  font-size: 35rpx;
+}
+.guanbiBtn{
+  position: absolute; 
+  right: 60rpx;
+  top: 320rpx;
+  margin: 0 auto;
+  
+}
+.guanbiBtn image{
+  height: 64rpx;
+  width: 64rpx;
+}
+
+.ensureCanNotSignView{
+  position: absolute;
+  width: 80%;
+  height: 750rpx;
+  margin: auto;
+  top: 300rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.ensureCanNotSignView-top{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 650rpx;
+  width: 100%;
+  background: white;
+  border-radius:20rpx;
+}
+.btn-group {
+    position: relative;
+    z-index: 1010;
+    margin-bottom: 50px;
+}
+.ensureCanNotSignView-top-subtitle{
+  color: #666666;
+  font-size: 30rpx;
+  margin-top: 90rpx;
+}
+.ensureCanNotSignView-top-subtitle text{
+  border-bottom: 1rpx solid #cccccc;
+  padding-bottom: 10rpx;
+}
+.ensureCanNotSignView-top-title{
+  color: rgb(225, 78, 65);
+  font-size: 60rpx;
+  font-weight: bold;
+  margin-bottom: 40rpx;
+}
+.ensureCanNotSignView-top-btn{
+  width: 584rpx;
+  height: 124rpx;
+  line-height: 114rpx;
+  color: white;
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+.ensureCanNotSignView-closeBtn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100rpx;
+  height: 100rpx;
+  margin-top: 20rpx;
+}
+.ensureCanNotSignView-closeBtn image{
+  width: 64rpx;
+  height: 64rpx;
+}
+.canNotSign{
+  margin-bottom: 50rpx;
+  color: #D2ABA7;
+}
+.canNotSign text{
+border-bottom: 1rpx solid #D2ABA7;
+}
+.pool{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  height: 84rpx;
+  background-color: #ea6545;
+  border-radius: 42rpx;
+  margin-bottom: 30rpx;
+}
+.pool-num{
+  font-size: 36rpx;
+  color: white;
+  margin-left: 40rpx;
+}
+.inject{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120rpx;
+  height: 60rpx;
+  border: 2rpx white solid;
+  border-radius: 30rpx;
+  color: white;
+  margin-right: 25rpx;
+}
+.titleAndBtnView{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 80%;
+  margin-bottom: 20rpx;
+}
+.titleAndBtnView text:nth-child(1){
+  font-size: 55rpx;
+  color:rgb(225, 78, 65);
+  font-weight: bold;
+}
+.tableBtnView{
+  width: 500rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  color: rgb(225, 78, 65);
+  text-align: center;
+  /* margin-bottom: 70rpx; */
+  font-size: 35rpx;
+  /* margin-top: 70rpx; */ 
+  background-color: rgba(255,255,255,0);
+  border: 3rpx solid rgb(225, 78, 65);
+  border-radius: 44rpx;
+  font-weight: bold;
+}

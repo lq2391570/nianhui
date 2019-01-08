@@ -1,0 +1,84 @@
+/* pages/choiceResult/choiceResult.wxss */
+page{
+  height: 100%;
+}
+.content{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.result{
+  width: 80vw;
+  height: 68vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.top{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+}
+.top-title{
+  font-size: 60rpx;
+  font-weight: bold;
+}
+.top-des{
+  margin-top: 8rpx;
+  font-size: 30rpx;
+  color: #999;
+}
+.btm{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.btm-title{
+  font-size: 28rpx;
+  color: #666;
+}
+.btm-des{
+  margin-top: 16rpx;
+  font-size: 28rpx;
+  color: #ed8071;
+}
+.wave{
+  position: absolute;
+  top: 12vh;
+  left: 60rpx;
+  font-size: 40rpx;
+  color: white;
+  writing-mode: vertical-lr;
+  letter-spacing:10rpx;
+}
+.people{
+  position: absolute;
+  top: 23vh;
+  left: 60rpx;
+  color: white;
+  font-size: 30rpx;
+  width: 56rpx;
+  text-align: center;
+}
+.back{
+  position: absolute;
+  top: 5vh;
+  left: 20rpx;
+  width: 70rpx;
+  height: 70rpx;
+  z-index: 99;
+}
+.back image{
+  width: 70rpx;
+  height: 70rpx;
+}

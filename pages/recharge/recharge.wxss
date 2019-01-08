@@ -1,0 +1,120 @@
+/* pages/recharge/recharge.wxss */
+page{
+  height: 100%;
+}
+.bgView{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 15rpx;
+  font-size: 32rpx;
+  color: #999;
+  width: 90vw;
+  margin-bottom: 10vh;
+}
+.pool{
+  width: 50vw;
+  height: 50vw;
+  border-radius: 25vw;
+  margin: 30rpx 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  color: white;
+}
+.numerical{
+  font-size: 50rpx;
+  margin: 5rpx;
+}
+.slider{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+.slider slider{
+  width: 90%;
+}
+.slider-value{
+  background-color: #e74e30;
+  width: 140rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius: 25rpx;
+  color: white;
+  font-size: 32rpx;
+  text-align: center;
+}
+.slider-default{
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+  font-size: 28rpx;
+  margin-top: -12rpx;
+  width: 90%;
+}
+.recharge{
+  width: 85%;
+  height: 80rpx;
+  border-radius: 40rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background-color: #e74e30;
+  color: white;
+  font-size: 36rpx;
+  margin: 50rpx;
+}
+.dynamic{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fdf8f5;
+  border-radius: 30rpx;
+  width: 85%;
+  margin: 0 0 60rpx 0;
+  box-shadow: 5rpx 5rpx 5rpx #f9e3d7 inset;
+}
+.title{
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 70rpx;
+  margin-top: 10rpx;
+  border-bottom: 2rpx #f88e5a dashed;
+  font-size: 30rpx;
+}
+.title text{
+  margin-left: 10rpx;
+}
+.list{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 20rpx 0;
+}
+.item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28rpx;
+  margin: 0 10rpx;
+}
+.name{
+  color: #333;
+}
+.num{
+  color: #d1514b;
+  font-size: 30rpx;
+}

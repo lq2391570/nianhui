@@ -1,0 +1,142 @@
+/* component/comeBackView/comeBackView.wxss */
+
+
+.comeBackpopView{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 800rpx;
+  background-size: 100% 100%;
+}
+.comeBackpopView-top{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  height: 70%;
+  
+}
+.comeBackpopView-top-text1{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 30%;
+}
+.nameClassView{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+.nameClass2{
+  /* border-radius: 20rpx; */
+  /* background: #dddddd; */
+  color: #666666;
+  /* background: rgb(251, 220, 202); */
+}
+.comeBackpopView-top-text2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 40%;
+  margin-bottom: 40rpx;
+  
+}
+.alreadyBtn{
+  color: white;
+  text-align: center;
+  font-size: 35rpx;
+  height: 110rpx;
+  width: 300rpx;
+  /* background: rgb(217, 54, 45); */
+  line-height: 100rpx;
+  margin-top: 40rpx;
+  margin-bottom: 20rpx;
+  background-size: 100% 100%;
+  
+}
+.comeBackpopView-top-text1 text:nth-child(1){
+  font-size: 55rpx;
+  font-weight: bold;
+  color: rgb(228, 93, 71);
+}
+.comeBackpopView-top-text1 text:nth-child(2){
+  font-size: 35rpx;
+  color: #666666;
+}
+.comeBackpopView-top-text2 text{
+  color: #333333;
+}
+.comeBackpopView{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 800rpx;
+  background-size: 100% 100%;
+}
+.comeBackpopView-top{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  height: 70%;
+  
+}
+
+.comeBackpopView-top-text1{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 30%;
+}
+.comeBackpopView-top-text1 text:nth-child(1){
+  font-size: 55rpx;
+  font-weight: bold;
+  color: rgb(228, 93, 71);
+}
+.comeBackpopView-top-text1 text:nth-child(2){
+  font-size: 35rpx;
+  color: #666666;
+}
+.comeBackpopView-top-text2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 40%;
+  margin-bottom: 40rpx;
+  
+}
+.comeBackpopView-top-text2 text{
+  color: #333333;
+}
+.callClass{
+  color: rgb(228, 93, 71);
+}
+.nameClassView{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+.nameClassView text:nth-child(1){
+ font-size: 30rpx;
+  color: #666666;
+  font-weight: normal;
+}
+
+.nameClass2{
+  /* border-radius: 20rpx; */
+  /* background: #dddddd; */
+  color: #666666;
+  /* background: rgb(251, 220, 202); */
+}

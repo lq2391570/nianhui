@@ -1,0 +1,58 @@
+/* component/applyView/applyView.wxss */
+.popView{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.callClass{
+  color: rgb(228, 93, 71);
+}
+.alreadyBtn{
+  color: white;
+  text-align: center;
+  font-size: 35rpx;
+  height: 110rpx;
+  width: 300rpx;
+  /* background: rgb(217, 54, 45); */
+  line-height: 100rpx;
+  margin-top: 40rpx;
+  margin-bottom: 20rpx;
+  background-size: 100% 100%;
+  
+}
+.popView{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.popView view:nth-child(1){
+  font-size: 40rpx;
+  font-weight: bold;
+  color: rgb(224, 68, 61);
+  border-bottom: 1rpx dashed rgb(224, 68, 61);
+  margin: 0rpx 40rpx 40rpx 40rpx;
+  width: 100%;
+  height: 80rpx;
+  text-align: center;
+}
+.popView view:nth-child(2){
+  text-align: left;
+  color: gray;
+  
+}
+.alreadyBtn{
+  color: white;
+  text-align: center;
+  font-size: 35rpx;
+  height: 110rpx;
+  width: 300rpx;
+  /* background: rgb(217, 54, 45); */
+  line-height: 100rpx;
+  margin-top: 40rpx;
+  margin-bottom: 20rpx;
+  background-size: 100% 100%;
+  
+}

@@ -1,0 +1,110 @@
+/* pages/choiceGame/choiceGame.wxss */
+page{
+  height: 100%;
+}
+.content{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.back{
+  position: absolute;
+  top: 5vh;
+  left: 20rpx;
+  width: 70rpx;
+  height: 70rpx;
+  z-index: 99;
+}
+.back image{
+  width: 70rpx;
+  height: 70rpx;
+}
+.left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transition: width 1.5s;
+}
+.right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transition: width 1.5s;
+}
+.back-home{
+  position: absolute;
+  bottom: 12vh;
+  width: 65vw;
+  height: 10vw;
+  border-radius: 5vw;
+  border: 2rpx white solid;
+  background-color: transparent;
+  color: white;
+  font-size: 32rpx;
+  line-height: 10vw;
+  z-index: 99;
+  text-align: center;
+}
+.keyword{
+  font-size: 70rpx;
+  color: white;
+  writing-mode: vertical-lr;
+  letter-spacing:20rpx;
+}
+.wave{
+  position: absolute;
+  top: 12vh;
+  left: 60rpx;
+  font-size: 40rpx;
+  color: white;
+  writing-mode: vertical-lr;
+  letter-spacing:10rpx;
+  z-index: 99;
+}
+.people{
+  position: absolute;
+  top: 23vh;
+  left: 60rpx;
+  color: white;
+  font-size: 30rpx;
+  width: 56rpx;
+  text-align: center;
+  z-index: 99;
+}
+.mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 1s;
+  font-size: 35rpx;
+  z-index: 100;
+}
+.cancel{
+  position: absolute;
+  left: 20vw;
+  bottom: 25vh;
+  right: 20vw;
+  color:white;
+  height: 80rpx;
+  border: 2rpx solid white;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 80rpx;
+}
+.determine{
+  position: absolute;
+  left: 20vw;
+  bottom: 15vh;
+  right: 20vw;
+  color:white;
+  height: 80rpx;
+  border-radius: 10rpx;
+  background-color: #f58455;
+  text-align: center;
+  line-height: 80rpx;
+}

@@ -1,0 +1,94 @@
+<!--pages/newFirstPage/newFirstPage.wxml-->
+<!-- <text>pages/newFirstPage/newFirstPage.wxml</text> -->
+<import src="../../component/navView/navView.wxml" />
+<import src="../../component/applyView/applyView.wxml" />
+<import src="../../component/comeBackView/comeBackView.wxml" />
+<wux-toast id="wux-toast" />
+<wux-backdrop id="wux-backdrop" />
+<view class='bgView' style="background-image: url('http://videoss.cdn.bcebos.com/bg.png')">
+  <template is="navView" data="{{haveBackBtn,isIphoneX}}" />
+  <view class='contentView'>
+    <view class='contentView-top'>
+      <!-- <view class='dateTitle'>
+        <text>2019.01.05</text>
+        <text>大唐西市酒店，我们不见不散</text>
+      </view>
+      <text class='dateTitle2'>距离年会盛大开幕还有</text>
+      <view class='countdown'>
+        <text style='font-size: 50rpx;color:rgb(225, 78, 65);font-weight: bold;'>{{c1}}<text style='font-size: 25rpx;color: #999999;;'>天</text></text>
+        <text style='font-size: 50rpx;color:rgb(225, 78, 65);font-weight: bold;'>{{c2}}<text style='font-size: 25rpx;color: #999999;;'>小时</text></text>
+        <text style='font-size: 50rpx;color:rgb(225, 78, 65);font-weight: bold;'>{{c3}}<text style='font-size: 25rpx;color: #999999;;'>分钟</text></text>
+        <text style='font-size: 50rpx;color:rgb(225, 78, 65);font-weight: bold;'>{{c4}}<text style='font-size: 25rpx;color: #999999;;'>秒</text></text>
+      </view> -->
+      <!-- <view class='speedApply' style="background-image: url('http://videoss.cdn.bcebos.com/speedApplyBtn.png')" bindtap='goToApply'>
+        <text>火速报名</text>
+        <text>累计报名人数{{userMes.num}}人</text>
+      </view>
+      <view class='applyNotice' bindtap='openNotice'>
+        报名须知
+      </view> -->
+    
+    <view class='titleAndBtnView'>
+    <text>欢迎来到中北年会</text>
+    <view class='tableBtnView' bindtap='lookOverTable'>
+    查看桌号
+    </view>
+    </view>
+
+    </view> 
+    <view class='contentView-bottom'>
+      <view class='talkBtn' style="background-image: url('http://videoss.cdn.bcebos.com/talkBtn.png')" bindtap='talkBtnClick'>
+      </view>
+      <view class='kindBtnView'>
+        <view class='kindBtnItem' bindtap='gameBtnClick'>
+          <image src='http://videoss.cdn.bcebos.com/myGameBtn.png'></image>
+          <text>游戏</text>
+        </view>
+        <view class='kindBtnItem' bindtap='voteBtnClick'>
+          <image src='http://videoss.cdn.bcebos.com/voteBtn.png'></image>
+          <text>节目投票</text>
+        </view>
+        <view class='kindBtnItem' bindtap='lotteryBtnClick'>
+          <image src='http://videoss.cdn.bcebos.com/lotteryBtn.png'></image>
+          <text>我的抽奖</text>
+        </view>
+      </view>
+      <view class='pool' hidden='{{false}}'>
+        <view class='pool-num'>能量池{{pool}}g</view>
+        <view class='inject' bindtap='inject'>注入</view>
+      </view>
+    </view>
+  </view>
+  <view class='bottomContentView'>
+    中国 西安
+  </view>
+</view>
+<template is="applyView" data="{{isOpenPopup}}" />
+<template is="comeBackView" data="{{isOpenComeBackPopup,userMes}}" />
+<view class='popTextArea && btn-group' hidden='{{!isOpenTextarea}}' style="border-radius: 20rpx;background: url('http://videoss.cdn.bcebos.com/barrageInput.png');background-size: 100% 100%;">
+  <textarea class='textAreaClass' placeholder='请写下您想说的话~' bindinput="talkInput" value='{{myTalkStr}}'></textarea>
+  <view class='submitBtn' style="background-image: url('http://videoss.cdn.bcebos.com/submit.png');background-size: 100% 100%;" bindtap='submitTalk' data-mes=''>提交</view>
+</view>
+<view class='guanbiBtn && btn-group-abo' hidden='{{!isOpenTextarea}}' bindtap='release'>
+  <image src='../../assets/guanbi-2.png'></image>
+</view>
+
+<view class='ensureCanNotSignView && btn-group' hidden='{{!isShowCanNotSignView}}'>
+  <view class='ensureCanNotSignView-top'>
+    <view class='ensureCanNotSignView-top-subtitle'>
+      <text>2019.01.05 大唐西市酒店</text>
+    </view>
+    <view class='ensureCanNotSignView-top-title'>
+      <text>2019中北年会</text>
+    </view>
+    <view class='ensureCanNotSignView-top-btn' style="background-image: url('http://videoss.cdn.bcebos.com/submit.png');background-size: 100% 100%;" bindtap='getSignCode'>
+      领取签到码
+    </view>
+    <view class='canNotSign' bindtap='canNotSignClick'>
+    <text>无法出席点这里</text>
+    </view>
+  </view>
+  <view class='ensureCanNotSignView-closeBtn && btn-group' bindtap='canNotSignViewrelease'>
+    <image src='../../assets/guanbi-2.png'></image>
+  </view>
+</view>

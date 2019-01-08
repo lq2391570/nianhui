@@ -1,0 +1,10 @@
+<!--pages/startPage/startPage.wxml-->
+<!-- <text>pages/startPage/startPage.wxml</text> -->
+<view class='bgView' style="background-image: url('http://videoss.cdn.bcebos.com/bg.png')">
+  <view class='contentView'>
+   <view class='logoClass'>
+    <image src='../../assets/ccnc2019-2.png'></image>
+   </view>
+    <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo" class='submitBtnclass' style="background-image: url('http://videoss.cdn.bcebos.com/entern.png');background-size: 100% 100%;"></button>
+  </view>
+</view>

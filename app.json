@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/startPage/startPage",
+    "pages/newFirstPage/newFirstPage",
+    "pages/aEndSignPage/aEndSignPage",
+    "pages/quickquickApply/quickquickApply",
+    "pages/quickApply/quickApply",
+    "pages/choiceIndex/choiceIndex",
+    "pages/choiceVictory/choiceVictory",
+    "pages/choiceResult/choiceResult",
+    "pages/voteOfProgramResult/voteOfProgramResult",
+    "pages/voteOfProgram/voteOfProgram",
+    "pages/recharge/recharge",
+    "pages/choiceGame/choiceGame",
+    "pages/canNotSignPage/canNotSignPage",
+    "pages/redBacketRain/redBacketRain",
+    "pages/succeedSignIn/succeedSignIn",
+    "pages/signCodePage/signCodePage",
+    "pages/firstPage/firstPage",
+    "pages/applyPage/applyPage",
+    "pages/index/index",
+    "pages/logs/logs",
+    "component/navView/navView",
+    "pages/applyFinishPage/applyFinishPage",
+    "component/applyView/applyView",
+    "component/comeBackView/comeBackView",
+    "pages/gameList/gameList",
+    "pages/myLottery/myLottery",
+    "pages/aEndFirstPage/aEndFirstPage"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "2019中北年会",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "networkTimeout": {
+    "request": 10000
+  }
+}

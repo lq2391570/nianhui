@@ -1,0 +1,25 @@
+<!--pages/signCodePage/signCodePage.wxml-->
+<!-- <text>pages/signCodePage/signCodePage.wxml</text> -->
+<import src="../../component/navView/navView.wxml"/>
+<wux-toast id="wux-toast" />
+<view class='bgView' style="background-image: url('http://videoss.cdn.bcebos.com/bg.png')">
+<template is="navView" data="{{haveBackBtn,isIphoneX}}"/>
+<view class='contentView' style="background-image: url('http://videoss.cdn.bcebos.com/signCodeBj.png')">
+<view class='contentView_top'>
+<text>【您的签到码】</text>
+<view class='twoDimensionCode'>
+ <image src='{{signCodeImageUrl}}'></image>
+</view>
+</view>
+<view class='contentView_bottom'>
+<view class='signTextView'>
+<text>凭此码在会务签到处<text style='color: rgb(225, 78, 65);'>签到</text></text>
+<text>签到后方可参与晚宴<text style='color: rgb(225, 78, 65);'>年终大奖</text></text>
+</view>
+<image src='http://videoss.cdn.bcebos.com/ccnc.png'></image>
+</view>
+</view>
+<view class='bottomContentView'>
+ 中国 西安
+ </view>
+</view>
